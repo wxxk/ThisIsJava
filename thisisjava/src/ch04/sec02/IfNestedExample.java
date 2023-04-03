@@ -24,6 +24,7 @@ public class IfNestedExample {
 		}
 		
 		System.out.println("학점: " + grade);
+		
 	}
 
 }
