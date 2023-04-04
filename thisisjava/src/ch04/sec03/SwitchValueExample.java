@@ -28,11 +28,15 @@ public class SwitchValueExample {
 			case "A" -> 100;
 			case "B" -> {
 				int result = 100 - 20;
+				// Java 13부터 가능
 				yield result;
 			}
 			default -> 60;
 		};
 		System.out.println("score2: " + score2);
+		
+		int num1 = 30;
+		System.out.println(num1++ + ++ num1);
 	}
 
 }
