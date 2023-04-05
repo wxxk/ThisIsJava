@@ -8,7 +8,6 @@ public class Ex0404 {
 		// TODO Auto-generated method stub
 		Scanner scanner = new Scanner(System.in);
 		int t = scanner.nextInt();
-		scanner.nextLine();
 		
 		for (int i = 0; i < t; i++) {
 			System.out.print("#" + (i+1) + " ");
@@ -20,6 +19,7 @@ public class Ex0404 {
 			}
 			System.out.println(sum);
 		}
+		scanner.close();
 	}
 
 }
