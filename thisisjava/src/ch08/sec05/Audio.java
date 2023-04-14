@@ -15,7 +15,6 @@ public class Audio implements RemoteControl {
 		System.out.println("Audio를 끕니다.");
 	}
 	
-	private int memoryVolume;
 	
 	@Override
 	public void setVolume(int volume) {
@@ -26,13 +25,14 @@ public class Audio implements RemoteControl {
 		} else {
 			this.volume = volume;
 		}
-		System.out.println("현재 Audio 볼룸: " + volume);
+		System.out.println("현재 Audio 볼륨: " + volume);
 	}
 	
+	private int memoryVolume;
 	@Override
 	public void setMute(boolean mute) {
 		// TODO Auto-generated method stub
-		if(volume>RemoteControl.MAX_VOLUME) {
+		if(mute) {
 			this.memoryVolume = this.volume;
 			System.out.println("무음 처리합니다.");
 			setVolume(RemoteControl.MIN_VOLUME);
