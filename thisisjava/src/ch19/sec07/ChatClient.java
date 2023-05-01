@@ -16,7 +16,7 @@ public class ChatClient {
 	String chatName;
 	
 	public void connet() throws IOException {
-		socket = new Socket("192.168.0.175", 50001);
+		socket = new Socket("localhost", 50001);
 		dis = new DataInputStream(socket.getInputStream());
 		dos = new DataOutputStream(socket.getOutputStream());
 		System.out.println("[클라이언트] 서버에 연결됨");

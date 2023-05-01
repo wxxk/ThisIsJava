@@ -10,5 +10,7 @@
 	<classpathentry kind="lib" path="C:/dev/workspace/my_lib/dist/my_lib.jar"/>
 	<classpathentry kind="lib" path="lib/json-20230227.jar"/>
 	<classpathentry kind="lib" path="lib/gson-2.10.1.jar"/>
+	<classpathentry kind="lib" path="lib/ojdbc6.jar"/>
+	<classpathentry kind="lib" path="lib/sqlite-jdbc-3.41.2.1.jar"/>
 	<classpathentry kind="output" path="bin"/>
 </classpath>
