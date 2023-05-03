@@ -86,3 +86,46 @@ end;
 select * from boards;
 select * from users;
 select * from accounts;
+
+
+
+CREATE TABLE customer (
+  ssn 		VARCHAR2(15) 	PRIMARY KEY,
+  cust_name	VARCHAR2(40) 	NOT NULL,
+  address 	VARCHAR2(100) 	NOT NULL 
+);
+
+CREATE TABLE stock (
+  symbol 	VARCHAR2(8) 	PRIMARY KEY,
+  price 	NUMBER(10, 3) 	NOT NULL 
+);
+
+CREATE TABLE shares (
+  ssn 		VARCHAR2(15) 	NOT NULL,
+  symbol 	VARCHAR2(8) 	NOT NULL,
+  quantity 	NUMBER(4) 		NOT NULL 
+);
+
+INSERT INTO customer VALUES('111-111', 'Heo', 'Seoul');
+INSERT INTO customer VALUES('111-112', 'Kim', 'Jeju');
+INSERT INTO customer VALUES('111-113', 'Lee', 'Busan');
+INSERT INTO customer VALUES('111-114', 'Hong', 'Seoul');
+INSERT INTO customer VALUES('111-115', 'Park', 'Gwangju');
+INSERT INTO customer VALUES('111-116', 'Sun', 'Incheon');
+INSERT INTO customer VALUES('111-117', 'You', 'Seoul');
+INSERT INTO customer VALUES('111-118', 'Seo', 'Seoul');
+
+INSERT INTO stock VALUES ('SUN', 68.25);
+INSERT INTO stock VALUES ('CyAs', 22.625);
+INSERT INTO stock VALUES ('DUKE', 6.25);
+INSERT INTO stock VALUES ('ABStk', 18.5);
+INSERT INTO stock VALUES ('JSVCo', 9.125);
+INSERT INTO stock VALUES ('TMAs', 82.375);
+INSERT INTO stock VALUES ('BWInc', 11.375);
+INSERT INTO stock VALUES ('GMEnt', 44.625);
+INSERT INTO stock VALUES ('PMLtd', 203.375);
+INSERT INTO stock VALUES ('JDK', 33.5);
+
+COMMIT;
+
+select * from stock;
