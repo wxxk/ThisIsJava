@@ -231,7 +231,7 @@ insert all
     into sales_log
         values(employee_id, week_id, 'SALES_FRI', sales_fri)
     select employee_id, week_id, sales_mon, sales_tue,
-        sales_Wed, sales_thu, sales_fri
+        sales_wed, sales_thu, sales_fri
     from sales;
 
 select * from sales_log;
